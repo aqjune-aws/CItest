@@ -16,6 +16,6 @@ jobs:
 
     - name: Run tests
       run: |
-        cd CItest
+        ls
         gcc -o test test.c
         ./test
