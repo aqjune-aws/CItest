@@ -29,23 +29,6 @@ jobs:
         cd ../benchmarks
         make
 
-  s2n-bignum-arm-apple-tests:
-    runs-on: macos-15
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-
-    - name: Run tests
-      run: |
-        cd arm
-        make
-        cd ../tests
-        make complete
-        make ctCheck
-        cd ../benchmarks
-        make
-
   s2n-bignum-x86-tests:
     runs-on: ubuntu-24.04
 
