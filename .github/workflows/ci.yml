@@ -38,8 +38,7 @@ jobs:
 
     - name: Install dependent packages
       run: |
-        sudo apt update
-        sudo apt install valgrind
+        brew install valgrind
 
     - name: Run tests
       run: |
