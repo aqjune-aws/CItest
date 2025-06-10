@@ -16,6 +16,6 @@ jobs:
 
     - name: Run tests
       run: |
-        ls
+        lscpu
         gcc -o test test.c
         ./test
