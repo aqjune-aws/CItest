@@ -16,7 +16,7 @@ jobs:
 
     - name: Install dependent packages
       run: |
-        apt install valgrind
+        sudo apt install valgrind
 
     - name: Run tests
       run: |
