@@ -30,7 +30,7 @@ jobs:
         make
 
   s2n-bignum-x86-tests:
-    runs-on: ubuntu-24.04-arm
+    runs-on: ubuntu-24.04
 
     steps:
     - name: Checkout code
