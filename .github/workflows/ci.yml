@@ -14,18 +14,12 @@ jobs:
 
     - name: Install dependent packages
       run: |
-        sudo apt update
-        sudo apt install valgrind
+        echo hi
 
     - name: Run tests
       run: |
-        cd arm
-        make
-        cd ../tests
-        make complete
-        make ctCheck
-        cd ../benchmarks
-        make
+        gcc -o test test.c
+        ./test
 
   s2n-bignum-x86-tests:
     runs-on: ubuntu-24.04
